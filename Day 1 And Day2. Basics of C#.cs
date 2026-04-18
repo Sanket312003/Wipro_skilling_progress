@@ -3,6 +3,18 @@ using System;
 
 namespace csharp_learn
 {
+
+    internal class Class1
+
+{
+    int a = 10, b = 20, c;
+
+    internal void Add()
+    {
+        c = a + b;
+        Console.WriteLine(c);
+    }
+}
     class Program
 
     {
