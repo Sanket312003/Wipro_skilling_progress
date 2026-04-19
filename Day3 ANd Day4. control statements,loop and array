@@ -1,0 +1,77 @@
+using System;
+using System.ComponentModel;
+
+
+namespace Day3_And_Day4
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            // even or odd
+            Console.WriteLine("eNTER THE NUMBER");
+            int a = Convert.ToInt32(Console.ReadLine());
+            if (a % 2 == 0)
+            {
+                Console.WriteLine("eVEN");
+            }
+            else
+            {
+                Console.WriteLine(" Odd");
+
+            }
+            //negative or positive
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (b > 0)
+            {
+                Console.WriteLine(" positive");
+
+            }
+            if(b<0)
+            {
+                Console.WriteLine("Negative");
+            }
+            else
+            {
+                Console.WriteLine("Zero");            }
+
+            // table
+            int x= Convert.ToInt32(Console.ReadLine());
+            int z;
+
+            for(int i = 1; i <= 10; i++)
+            {
+                z = x * i;
+                Convert.ToInt32(z);
+                Console.WriteLine(z);
+            }
+            int[] arr = { 3, 7, 2, 9, 5 };
+
+            int max = arr[0]; 
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] > max)
+                {
+                    max = arr[i];
+                }
+            }
+
+            Console.WriteLine("Maximum element is: " + max);
+
+
+        }
+
+        }
+    }
+}
+
+        
+ 
+
+
+    
+   
+    
+
+
